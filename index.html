@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kavi – Poetry in Darkness</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Floating Shooting Stars -->
+    <div class="shooting-star" style="--i:1"></div>
+    <div class="shooting-star" style="--i:2"></div>
+    <div class="shooting-star" style="--i:3"></div>
+  <header>
+    <h1>Kavi <span>Poetry</span></h1>
+    <p class="tagline">Whispers in the Dark</p>
+  </header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <h3>Poems</h3>
+      <ul id="poemList"></ul>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <button id="toggleSidebar" class="toggle-sidebar">☰ Poems</button>
+      <main id="poem-container" class="poem-container">
+        <p class="loading">Loading poems...</p>
+      </main>
+
+      <div class="controls">
+        <button id="prevBtn">⟵ Previous</button>
+        <button id="nextBtn">Next ⟶</button>
+      </div>
+
+      <div class="music-control">
+        <button id="musicBtn">🎵 Play Music</button>
+        <audio id="bgMusic" loop>
+          <source src="audio/ambient.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Kavi | Crafted with 🌙 & Verse</p>
+  </footer>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
